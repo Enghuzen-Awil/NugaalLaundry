@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Bootstrap CSS -->
+		<link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;family=Poppins:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+
+        <title>ilaundry. - on NodeJS</title>
+    </head>
+    <body>
+        <div class="doc_sidebar_wrapper">
+            <!--sidebar start-->
+            <div class="logo_wrapper">
+                <div class="doc_logo">
+                    <img src="assets/images/logo.png" class="logo" alt="logo" />
+                </div>
+            </div>
+            <div class="doc_sidebar_inner">
+                <div class="menu_inner">
+                    <ul>
+                        <li data-number="1" class="menu_item main_menu active">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m446.604 124.392-119.996-119.997c-2.846-2.847-6.735-4.395-10.608-4.395h-210c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h300c24.813 0 45-20.187 45-45v-332c0-4.116-1.743-7.957-4.396-10.608zm-115.604-73.179 68.787 68.787h-53.787c-8.271 0-15-6.729-15-15zm75 430.787h-300c-8.271 0-15-6.729-15-15v-422c0-8.271 6.729-15 15-15h195v75c0 24.813 20.187 45 45 45h75v317c0 8.271-6.729 15-15 15z"
+                                            />
+                                            <path d="m346 242h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 302h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 362h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <circle cx="136" cy="257" r="15" />
+                                            <circle cx="136" cy="317" r="15" />
+                                            <circle cx="136" cy="377" r="15" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Introduction</span>
+                            </a>
+                        </li>
+
+                        <li data-number="2" class="menu_item main_menu active">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m446.604 124.392-119.996-119.997c-2.846-2.847-6.735-4.395-10.608-4.395h-210c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h300c24.813 0 45-20.187 45-45v-332c0-4.116-1.743-7.957-4.396-10.608zm-115.604-73.179 68.787 68.787h-53.787c-8.271 0-15-6.729-15-15zm75 430.787h-300c-8.271 0-15-6.729-15-15v-422c0-8.271 6.729-15 15-15h195v75c0 24.813 20.187 45 45 45h75v317c0 8.271-6.729 15-15 15z"
+                                            />
+                                            <path d="m346 242h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 302h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 362h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <circle cx="136" cy="257" r="15" />
+                                            <circle cx="136" cy="317" r="15" />
+                                            <circle cx="136" cy="377" r="15" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Basic</span>
+                            </a>
+                        </li>
+
+                        <li data-number="3" class="menu_item main_menu active">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m446.604 124.392-119.996-119.997c-2.846-2.847-6.735-4.395-10.608-4.395h-210c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h300c24.813 0 45-20.187 45-45v-332c0-4.116-1.743-7.957-4.396-10.608zm-115.604-73.179 68.787 68.787h-53.787c-8.271 0-15-6.729-15-15zm75 430.787h-300c-8.271 0-15-6.729-15-15v-422c0-8.271 6.729-15 15-15h195v75c0 24.813 20.187 45 45 45h75v317c0 8.271-6.729 15-15 15z"
+                                            />
+                                            <path d="m346 242h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 302h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 362h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <circle cx="136" cy="257" r="15" />
+                                            <circle cx="136" cy="317" r="15" />
+                                            <circle cx="136" cy="377" r="15" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Server</span>
+                            </a>
+                        </li>
+
+                        <li data-number="4" class="menu_item main_menu">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Mysql Database Setup</span>
+                            </a>
+                        </li>
+
+                        <li data-number="5" class="menu_item main_menu">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Node Js Web App</span>
+                            </a>
+                        </li>
+
+                        <li data-number="6" class="menu_item main_menu">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M512,197.819l-185.933-12.228L256,9.571l-70.067,176.021L0,197.82l142.658,120.93L95.856,502.429L256,401.214 l160.144,101.215l-46.8-183.671L512,197.819z M256,365.724l-112.464,71.08l32.827-128.831L75.829,222.888l130.971-8.603 L256,90.687l49.2,123.599l131.124,8.602l-100.689,85.077l32.829,128.839L256,365.724z"
+                                                />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Features</span>
+                            </a>
+                        </li>
+
+                        <li data-number="7" class="menu_item main_menu">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 512 512">
+                                        <g>
+                                            <g><path d="M464.707,457l-194-432h-29.58l-186,432H0v30h160v-30H87.79l47.792-111h176.392l49.847,111H312v30h200v-30H464.707z M148.498,316l73.423-170.53L298.501,316H148.498z" /></g>
+                                        </g>
+                                    </svg>
+                                </span>
+
+                                <span class="title_spn">Outro</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar_ovelay toggle_btn"></div>
+        <!--sidebar end-->
+
+        <div class="doc_main_wrapper">
+            <!--doc_main_wrapper start-->
+            <div class="main__inner_wrapper">
+                <!--main__inner_wrapper start-->
+                <!-- Header start -->
+                <div class="doc_header_wrapper">
+                    <div class="container-fluid">
+                        <div class="doc_header_inner">
+                            <div class="doc_left_wrap">
+                                <div class="toggle_btn">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270 270">
+                                        <g>
+                                            <g><path d="M114,0H10C4.5,0,0,4.5,0,10v104c0,5.5,4.5,10,10,10h104c5.5,0,10-4.5,10-10V10C124,4.5,119.5,0,114,0z M104,104H20V20h84 V104z" /></g>
+                                        </g>
+                                        <g>
+                                            <g><path d="M260,0H156c-5.5,0-10,4.5-10,10v104c0,5.5,4.5,10,10,10h104c5.5,0,10-4.5,10-10V10C270,4.5,265.5,0,260,0z M250,104h-84 V20h84V104z" /></g>
+                                        </g>
+                                        <g>
+                                            <g><path d="M114,146H10c-5.5,0-10,4.5-10,10v104c0,5.5,4.5,10,10,10h104c5.5,0,10-4.5,10-10V156C124,150.5,119.5,146,114,146z M104,250H20v-84h84V250z" /></g>
+                                        </g>
+                                        <g>
+                                            <g><path d="M260,146H156c-5.5,0-10,4.5-10,10v104c0,5.5,4.5,10,10,10h104c5.5,0,10-4.5,10-10V156C270,150.5,265.5,146,260,146z M250,250h-84v-84h84V250z" /></g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="ceated_info">
+                                    <ul>
+                                        <li>Updated : 04 August 2025</li>
+                                        <li><strong>Contact Our Support Team Email: </strong><a class="word_break" href="mailto:cherrystuart83@gmail.com">cherrystuart83@gmail.com</a></li>
+                                        <li><strong>Microsoft Teams: </strong><a class="word_break" href="https://teams.live.com/l/invite/FEA0TubY7JHjlpJHQU">KMS Agency</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header End -->
+                <div class="doc_content_wrapper">
+                    <!--doc_content_wrapper start-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- 1 section Introduction -->
+                                <div class="main_section" data-scroll="1">
+                                    <header><h1 class="mb-3">Introduction</h1></header>
+									<p>Thank you for your interest in <b>ilaundry.</b></p>
+									
+                                    <p>
+                                        Our laundry management system is a powerful and efficient solution designed specifically for laundry owners. It encompasses various modules that cover every aspect of your business, ensuring smooth operations and exceptional customer service. The point-of-sale (POS) module enables seamless invoicing, payment processing, and customer information management. With the order management module, you can easily create, track, and assign orders to specific staff members or departments, ensuring timely completion and customer satisfaction. Our coupon management feature allows you to create and manage discounts and promotional offers, attracting customers while maintaining profitability. The expense management module helps you monitor and categorize expenses, enabling better financial control and budgeting. Additionally, the report management module generates detailed reports on sales, revenue, customer analytics, and inventory, empowering you with valuable insights for informed decision-making. With our comprehensive laundry management system, you can streamline operations, enhance customer experiences, optimize expenses, and drive business growth effectively.
+                                    </p>
+                                    
+                                    
+									
+									<h3><b>Point-of-Sale (POS) Management</b></h3>
+									
+									<ul>
+									<li>The POS module handles the sales transactions at your laundry.</li>
+									<li>It enables you to create invoices for customers, calculate pricing based on services offered (e.g., washing, drying, folding), and process payments.</li>
+									<li>The system may also track customer information, such as contact details, preferences, and payment history, for better customer service.</li>
+									</ul>
+                                
+								<h3><b>Order Management</b></h3>
+								
+								<ul>
+									<li>The order management module helps you handle customer requests for laundry services.</li>
+									<li>It allows you to create and manage orders, including tracking their status (received, in progress, completed).</li>
+									<li>You can assign orders to specific staff members or departments responsible for different stages of the laundry process.</li>
+									<li>The module may also include features like order scheduling, prioritization, and notifications to keep both staff and customers updated.</li>
+									</ul>
+								
+								<h3><b>Coupon Management</b></h3>
+								<ul>
+									<li>The coupon management module is designed to handle discounts and promotional offers.</li>
+									<li>It enables you to create and manage coupons with various parameters, such as discount percentages or fixed amounts.</li>
+									<li>You can set conditions for coupon usage, such as minimum order amount or specific services eligible for discounts.</li>
+									<li>The system should be able to validate and apply coupons automatically during the billing process.</li>
+									</ul>
+								<h3><b>Expense Management</b></h3>
+								<ul>
+									<li>The expense management module allows you to track and manage your laundry business expenses.</li>
+									<li>It includes features to record and categorize expenses, such as utility bills, supply purchases, equipment maintenance, employee wages, and rent.</li>
+									<li>You can generate expense reports for analysis and budgeting purposes.</li>
+									<li>The module may also provide tools to reconcile expenses with revenue to assess profitability.</li>
+									</ul>
+									
+									<h3><b>Report Management</b></h3>
+								<ul>
+									<li>The report management module provides insights into your laundry business's performance.</li>
+									<li>It generates various reports, such as sales reports, revenue reports, customer analytics, and inventory reports.</li>
+									<li>These reports help you monitor key metrics, identify trends, and make informed decisions.</li>
+									<li>The system may allow customization of report parameters, export options (e.g., PDF, Excel), and scheduling for automated report generation.</li>
+									</ul>
+
+
+								</div>
+                            </div>
+                        </div>
+
+                        <div class="main_section" data-scroll="2">
+                            <h2>Basic</h2>
+                            <p>As ilaundry is a complete system with lots of modules for web , it is compulsory to have some basic knowledge in server side if you want to do the installation.</p>
+                            <ul>
+                                <li>Real server Server related knowledge like apache or local machine server, we preferred to use a real server.</li>
+                                <li>Server related knowledge and we preferred cPanel in your server for quick installation</li>
+                                <li>basic knowledge about google cloud and firebase.</li>
+                            </ul>
+
+                            <div class="alert alert--danger admonition">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        warning
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>
+                                        The Envato price don’t included any kind of installation and deploy support. You need to follow the documentation step by step for installation, setup and other branding related changes. We are not
+                                        responsible for your mistake. Also if you do any kind of customization it is totally your responsibility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main_section" data-scroll="3">
+                            <h2>Server</h2>
+                            <p>Require For Setup Node js (v20.19.3) And Run Properly.</p>
+                            <ul>
+                                <li>ilaundry require node js version 16 and above.</li>
+                                <li>Require Node Module Folder</li>
+                            </ul>
+
+                            <div class="alert alert--danger admonition">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        warning
+                                    </h5>
+                                </div>
+                                <div class="admonition-content"><p>Please do this very carefully. We will not be responsible for your mistake.</p></div>
+                            </div>
+                            <div class="alert alert--danger admonition">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        Must Required Sub Domain
+                                    </h5>
+                                </div>
+                                <div class="admonition-content"><p>Our code is designed to be fully compatible and supported only on subdomains, such as https://subdomain.yourdomainname.com. It cannot be installed on the root domain or any additional paths, like https://www.yourdomainname.com/admin. Additionally, it is not compatible with localhost or any private DNS zones.</p></div>
+                            </div>
+                        </div>
+
+                        <div class="main_section" data-scroll="4">
+                            <h2>Install on server</h2>
+                            <h3>1. Database Configuration</h3>
+                            <p><strong>Before starting the admin installation, database must be configured for the application.</strong></p>
+							<p>For creating the database, the following ways must be maintained-</p>
+
+                           <ul><li>Go to <strong>MySQL Databases</strong></li></ul>
+						   <div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-1.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+                        <ul><li>Create a new database for the application</li></ul>
+						<div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-2.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+						
+						<ul><li>Create a user for the database</li></ul>
+						<div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-3.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+						
+						<div class="admonition admonition-warning alert alert--danger"><div class="admonition-heading"><h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>warning</h5></div><div class="admonition-content"><p>Avoid using hash ("#" or "$") in your password</p></div></div>
+						
+						<ul><li>Add the user to the database</li></ul>
+						<div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-4.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+						<ul><li>Give privileges to the user</li></ul>
+						<div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-5.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+						
+                        </div>
+
+                        <div class="main_section" data-scroll="5">
+                            <h1 class="doc_title01">Node Js Web App</h1>
+                            <h4><b>Prerequisite</b></h4>
+
+                            <ul>
+                                <li>
+                                    <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer">Vs code</a> or
+                                    <a href="https://www.jetbrains.com/help/webstorm/installation-guide.html" target="_blank" rel="noopener noreferrer">Webstorm</a>.
+                                </li>
+                                <li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">Nodejs</a></li>
+                                <li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">Npm</a></li>
+                                <li><a href="https://classic.yarnpkg.com/en/docs/install" target="_blank" rel="noopener noreferrer">Yarn</a> (Mandatory)</li>
+                            </ul>
+
+                            <h4><b>Environment Setup</b></h4>
+                            <p>You have to download and setup node js from nodejs.org. You can follow documentation with your own device.</p>
+
+                            <h3><b>Installing Node js</b></h3>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>Recommended link is here -</p>
+                                    <p><a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">https://nodejs.org/en/download</a></p>
+                                </div>
+                            </div>
+
+                            <p>
+                                Great!! As now you have installed the <a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">NodeJs</a> successfully, now you just have to install NPM or Yarn. Below we have given
+                                the easy documentation.
+                            </p>
+
+                            <h3><b>Installing npm</b></h3>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>You can check the official documentation -</p>
+                                    <p><a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank" rel="noopener noreferrer">https://docs.npmjs.com/downloading-and-installing-node-js-and-npm</a></p>
+                                </div>
+                            </div>
+
+                            <pre class="language-javascript" tabindex="0"><code class="language-javascript">sudo apt install -g npm</code><button>Copy Code</button></pre>
+
+                            <p class="mt-3">And,</p>
+
+                            <h3><b>Installing Yarn</b></h3>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>You can check the official documentation -</p>
+                                    <p><a href="https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable" target="_blank" rel="noopener noreferrer">https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable</a></p>
+                                </div>
+                            </div>
+
+                            <pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install --global yarn</code><button>Copy Code</button></pre>
+
+                            <h3 class="mt-3"><b>Mandatory Setup (Web)</b></h3>
+
+                            <h6><b>1. Add Twilio Account Details For Getting SMS</b></h6>
+                            <p>To get the Twilio Auth Token, Phone Number, and Account SID, you will need to follow these steps:</p>
+                            <ul>
+                                <li>Go to the Twilio website and sign up for an account if you haven't already done so.
+								<div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>You can Register On Twilio Here</p>
+                                    <p><a href="https://www.twilio.com/" target="_blank" rel="noopener noreferrer">https://www.twilio.com/</a></p>
+                                </div>
+                            </div>
+								</li>
+                                <li>Once you are signed in, go to the console dashboard. Here you will see your Account SID and a button to reveal your Auth Token.</li>
+                                <li>To get a phone number, click "Phone Numbers" in the navigation bar, then select "Buy a Number". You can choose from a variety of phone numbers from different countries and regions.</li>
+                                <li>Follow the prompts to purchase a phone number and assign it to your project.</li>
+                                <li>After purchasing a phone number, you can find it under the "Active Numbers" section in the "Phone Numbers" tab of the console.</li>
+                            </ul>
+                            <p>
+                                Note that the Auth Token is a sensitive piece of information, and you should never share it with anyone. Keep it safe and secure. Additionally, make sure to use your purchased phone number according to
+                                Twilio's terms of service and applicable laws and regulations.
+                            </p>
+
+                            <h6><b>2. Onesignal Web Push Notification</b></h6>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>You can Register On Onesignal Here</p>
+                                    <p><a href="https://onesignal.com/" target="_blank" rel="noopener noreferrer">https://onesignal.com/</a></p>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>Sign up for a free account on the OneSignal website.</li>
+                                <li>Once you are signed in, create a new app and select "Web Push" as your platform. You will be prompted to enter some basic information about your app.</li>
+                                <li>After configuring your web push settings, download and install the OneSignal SDK into your website code. You can find detailed instructions on how to do this in the OneSignal documentation</li>
+                            </ul>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>Web Push Onesignal Notification</p>
+                                    <p><a href="https://documentation.onesignal.com/docs/web-push-quickstart" target="_blank" rel="noopener noreferrer">https://documentation.onesignal.com/docs/web-push-quickstart</a></p>
+                                </div>
+                            </div>
+
+                            <p>
+                                It's important to note that web push notifications may not be supported on all browsers and devices, so it's a good idea to test your implementation thoroughly before launching it to your users. Additionally,
+                                you should always respect users' preferences and only send notifications that are relevant and valuable to them.
+                            </p>
+
+                            
+                            <br />
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content"><p>Recommended tutorial is below for cpanel with have setup node js 👇</p></div>
+                            </div>
+                            <iframe
+                                width="100%"
+                                height="400"
+                                src="https://www.youtube.com/embed/emDCYo5Rz0E"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+
+                            <h3 class="mt-3"><b>Site Build and Deploy</b></h3>
+                            <h4><b>1.Deploy in Your Own Server Like Vps Or Dedicated Server</b></h4>
+
+                            <h6><b>1.1 Package Installation</b></h6>
+                            <p>To install node_module , run the following command</p>
+                            <pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install </code><button>Copy Code</button></pre>
+
+                            <div class="admonition admonition-caution alert alert--warning">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        Mandatory
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>Make sure you have <code>node_modules</code> installed in your directory.</p>
+                                </div>
+                            </div>
+                            <p>The above command will install all the node modules in your directory.</p>
+
+                            <h6><b>1.2 Project Run On background</b></h6>
+                            <ul>
+                                <li>
+                                    Install PM2 in your server
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install pm2 -g</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>
+                                    To run the site in your server, you have to run the PM2 command given below
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">pm2 start npm --name "`YOUR_PROJECT_NAME`" -- start</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>
+                                    To re-deploy your site after some changes, you must run the following commands
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">pm2 delete "YOUR_PROJECT_NAME"
+pm2 start npm --name "YOUR_PROJECT_NAME" -- start</code><button>Copy Code</button></pre>
+                                </li>
+                            </ul>
+
+                            <div class="admonition admonition-caution alert alert--warning">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        MANDATORY
+                                    </h5>
+                                </div>
+                                <div class="admonition-content"><p>Must follow the above instructions</p></div>
+                            </div>
+
+                            <h4><b>2.Deploy to Vercel</b></h4>
+                            <p>Deploying a Node.js app to Vercel is a fairly straightforward process, and can be done in just a few steps.</p>
+                            <p>Here's what you'll need to do:</p>
+                            <ul>
+                                <li>
+                                    Sign up for a Vercel account.
+                                    <div class="admonition admonition-tip alert alert--success">
+                                        <div class="admonition-heading">
+                                            <h5>
+                                                <span class="admonition-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                                tip
+                                            </h5>
+                                        </div>
+                                        <div class="admonition-content">
+                                            <p>Web Push Onesignal Notification</p>
+                                            <p><a href="https://vercel.com/signup" target="_blank" rel="noopener noreferrer">https://vercel.com/signup</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    Install the Vercel CLI by running the following command in your terminal:
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install -g vercel</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>
+                                    Navigate to the root directory of your Node.js app and run the following command to initialize your Vercel project:
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">vercel init</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>Follow the prompts to link your Vercel account and select your project.</li>
+                                <li>
+                                    After the initialization is complete, run the vercel deploy command to deploy your app to Vercel:
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">vercel deploy</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>
+                                    The deployment process will begin, and you'll be given a URL where your app can be accessed once it's deployed.
+                                </li>
+                            </ul>
+                            <p>
+                                That's it! Your Node.js app should now be up and running on Vercel. If you need to make any updates or changes, simply push your changes to your code repository and Vercel will automatically redeploy your
+                                app.
+                            </p>
+                        </div>
+
+                        <!-- 2.section Features -->
+                        <div class="main_section" data-scroll="6">
+                            <h1 class="mb-3">Features information</h1>
+                            <ul class="ul_style1">
+                                <li>
+                                    <b>Dashboard:</b>
+                                    <p>
+                                       ilaundry dashboard Show Total Sales,Recent Orders,Total Orders,Total Services,Total customer.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s1.png" />
+                                <li>
+                                    <b>POS:</b>
+                                    <p>
+                                        Point-of-Sale (POS) management for a laundry business involves using software and processes to handle customer transactions, manage inventory, track orders, maintain customer information, generate reports, and integrate with other systems. With a POS system in place, laundry businesses can process payments seamlessly, keep track of inventory items such as detergents and hangers, monitor order status from drop-off to pick-up, maintain a customer database for personalized service, and obtain valuable insights through sales reports and analytics. This efficient and integrated approach helps streamline operations, enhance customer experience, and optimize overall management in the laundry industry.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s2.png" />
+                                <li>
+                                    <b>Order Management:</b>
+                                    <p>
+                                      Order Manage Easily Create,Edit,View And Print Of The Order With BarCode Attach To Order.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s3.png" />
+                                <li>
+                                    <b>Customer Management:</b>
+                                    <p>
+                                        Customer Manage Easily Create,Edit Operation.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s4.png" />
+                                <li>
+                                    <b>Store And Branch Management:</b>
+                                    <p>
+                                        Store and branch management in the laundry industry involves overseeing the operations of multiple locations to ensure efficient and effective functioning. This role includes a variety of responsibilities such as managing inventory, coordinating staff schedules, monitoring equipment maintenance, and ensuring quality control standards are met. Store and branch managers are responsible for setting and achieving sales targets, implementing marketing strategies, and fostering positive customer relationships. They must also track financial performance, analyze data, and make informed decisions to drive business growth. Effective communication and leadership skills are essential in this role as managers need to motivate and train their teams, resolve customer complaints, and collaborate with suppliers and other stakeholders. By effectively managing stores and branches, laundry businesses can provide top-notch service while maximizing productivity and profitability.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s5.png" />
+                                <li>
+                                    <b>Role Management:</b>
+                                    <p>Role management in a laundry system involves assigning and managing different roles and responsibilities to individuals involved in the operation of the system. The purpose of role management is to ensure smooth functioning, efficiency, and accountability within the laundry facility. Typically, key roles in a laundry system include administrators, staff members, and customers. Administrators are responsible for overseeing the overall management of the system, including user access control, maintaining system integrity, and setting up operational guidelines. Staff members, such as laundry attendants, are tasked with handling various laundry-related tasks, such as receiving and sorting clothes, operating washing machines and dryers, folding and packaging clean laundry, and delivering it to customers. Lastly, customers play a role in the system by submitting their laundry requests, specifying preferences, making payments, and collecting their clean laundry. Proper role management involves defining and assigning specific responsibilities, ensuring appropriate access levels, and maintaining clear communication channels among all participants to optimize the efficiency and effectiveness of the laundry system.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s6.png" />
+                                <li>
+                                    <b>Store Payout Management:</b>
+                                    <p>Store payout management in a laundry system involves handling the financial aspect of the business, specifically managing payouts to staff members and vendors. It includes processes such as calculating wages, tracking commissions or bonuses, and disbursing payments for laundry services rendered. Payout management ensures that employees are fairly compensated for their work and that vendors receive timely and accurate payments for the supplies or services they provide to the laundry facility. This requires maintaining detailed records of employee hours worked, rates of pay, and any additional factors that may affect compensation, such as overtime or shift differentials. Additionally, payout management involves verifying invoices from vendors, reconciling accounts payable, and issuing payments in accordance with agreed-upon terms. Proper store payout management helps to maintain financial transparency, build trust with staff and vendors, and ensure the smooth operation of the laundry system by effectively managing its financial obligations.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s7.png" />
+                                <li>
+                                    <b>Reports:</b>
+                                    <p>
+                                       Reports in a laundry system are essential for monitoring and analyzing various aspects of the business. These reports provide valuable insights into operational efficiency, financial performance, customer trends, and inventory management. Some common types of reports in a laundry system include sales reports, expense reports, customer satisfaction reports, inventory reports, and performance reports. Sales reports track revenue generated from laundry services, helping to identify peak periods, popular service packages, and potential areas for growth. Expense reports outline the laundry facility's costs, including labor, supplies, equipment maintenance, and utilities, enabling effective budgeting and expense control. Customer satisfaction reports capture feedback and ratings from customers, allowing the management to address any issues promptly and improve overall service quality. Inventory reports monitor stock levels of laundry supplies, such as detergent, fabric softeners, and hangers, ensuring that an adequate supply is available without excessive inventory or shortages. Performance reports provide key performance indicators (KPIs) and metrics, such as turnaround time, machine utilization rates, and employee productivity, offering insights into operational efficiency and identifying areas for optimization. Overall, reports in a laundry system play a crucial role in informed decision-making, process improvement, and maintaining a competitive edge in the market.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s8.png" />
+                                <li>
+                                    <b>Expense Management:</b>
+                                    <p>
+                                        Expense management in a laundry system involves effectively tracking, analyzing, and controlling costs associated with operations. It encompasses various aspects such as labor expenses, equipment maintenance, utility bills, supplies, and other operational expenses. A systematic approach to expense management helps optimize financial resources, control expenditures, and improve profitability.
+                                    </p>
+									<p>
+                                        To manage expenses in a laundry system, it is crucial to accurately record and categorize expenses. This involves maintaining detailed records of all costs incurred, including invoices, receipts, and payment information. By categorizing expenses appropriately, such as separating labor costs from supply costs, it becomes easier to analyze spending patterns and identify areas for cost reduction or optimization.
+                                    </p>
+									<p>
+                                       Regular analysis of expenses is essential to assess financial health and identify potential savings opportunities. By reviewing expense reports, laundry facility managers can identify areas of inefficiency, such as excessive energy usage or overspending on supplies. This allows for targeted action to reduce costs, negotiate better pricing with vendors, implement energy-saving measures, or streamline operational processes.
+                                    </p>
+									<p>
+                                        Implementing cost-control measures is another important aspect of expense management in a laundry system. This may include setting budgets and spending limits, monitoring expenses against budgeted amounts, and implementing cost-cutting strategies where necessary. For example, optimizing machine usage schedules, training staff to operate equipment efficiently, or exploring bulk purchasing options for supplies can help minimize expenses without compromising on service quality.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s9.png" />
+                                <li>
+                                    <b>Staff Management:</b>
+                                    <p>Staff management is a critical aspect of an efficient and successful laundry system. Effective staff management involves various tasks, including recruitment, training, scheduling, performance evaluation, and fostering a positive work environment. To ensure smooth operations, it is essential to hire qualified and reliable staff members who can handle the demands of the laundry system efficiently. Training programs should be implemented to equip employees with the necessary skills and knowledge required to perform their duties effectively. Scheduling shifts and managing workloads should be done strategically to optimize productivity and avoid overburdening employees. Regular performance evaluations can help identify areas for improvement and provide feedback to motivate and develop staff members. Creating a positive work environment that encourages teamwork, communication, and recognition will boost employee morale and contribute to a more productive and satisfied workforce in the laundry system.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s12.png" />
+                                <li>
+                                    <b>Notification:</b>
+                                    <p>Notifications are alerts or messages that are sent to customers, clients, or drivers to keep them informed about the status of their orders.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s11.png" />
+                                <li>
+                                    <b>Setting:</b>
+                                    <p>Settings are configurable options that allow businesses to customize the behavior and functionality of their laundry management system.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/s10.png" />
+                            </ul>
+                            <strong>
+                                Like our work don't forget to rate it <a href="http://themeforest.net/downloads" target="_blank" title="Click to rate"><img class="start_img" alt="images" src="assets/images/5star.png" /></a>
+                            </strong>
+                        </div>
+                        <!-- 3.section Code Structure -->
+
+                        <!-- 5. sub section How to Use -->
+                    </div>
+
+                    <!-- 6.section Java Scripts -->
+                    <div class="main_section" data-scroll="7">
+                        <h1 class="mb-3">Outro</h1>
+                        <p>Thank you for your purchase. If you have any questions that are beyond the scope of this help file, please contact us through <strong>cherrystuart83@gmail.com</strong></p>
+
+                        <p>
+                            Once again, thank you so much for purchasing this script. As I said at the beginning, I'd be glad to help you if you have any questions relating to this script. No guarantees, but I'll do my best to assist. If
+                            you have a more general question relating to the script, you might consider visiting the forums and asking your question in the "Item Discussion" section.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

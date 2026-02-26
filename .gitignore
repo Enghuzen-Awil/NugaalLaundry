@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+dist/
+
+# Environment Variables and Secrets
+.env
+.env.local
+.env.*.local
+config.env
+*.pem
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MacOS specific
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Temp
+tmp/
+temp/
